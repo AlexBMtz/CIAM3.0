@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlInformacionProdu = new MetroFramework.Controls.MetroPanel();
             this.txtCantidad = new MetroFramework.Controls.MetroTextBox();
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtTipoProducto = new MetroFramework.Controls.MetroTextBox();
             this.txtCalidad = new MetroFramework.Controls.MetroTextBox();
             this.lblCalidad = new MetroFramework.Controls.MetroLabel();
@@ -60,11 +61,10 @@
             this.productQualityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donationDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlInformacionProdu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.pnlProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlInformacionProdu
@@ -116,6 +116,10 @@
             this.txtCantidad.UseSelectable = true;
             this.txtCantidad.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtCantidad.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // productBindingSource
+            // 
+            this.productBindingSource.DataSource = typeof(CIAMTrial.Data.Product);
             // 
             // txtTipoProducto
             // 
@@ -259,7 +263,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(168, 58);
+            this.lblId.Location = new System.Drawing.Point(168, 62);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(21, 19);
             this.lblId.TabIndex = 7;
@@ -281,7 +285,7 @@
             this.txtDescripcion.CustomButton.Visible = false;
             this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Description", true));
             this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(12, 80);
+            this.txtDescripcion.Location = new System.Drawing.Point(12, 87);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
@@ -497,10 +501,6 @@
             this.requestDetailsDataGridViewTextBoxColumn.HeaderText = "RequestDetails";
             this.requestDetailsDataGridViewTextBoxColumn.Name = "requestDetailsDataGridViewTextBoxColumn";
             // 
-            // productBindingSource
-            // 
-            this.productBindingSource.DataSource = typeof(CIAMTrial.Data.Product);
-            // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,10 +519,10 @@
             this.Load += new System.EventHandler(this.frmProducto_Load);
             this.pnlInformacionProdu.ResumeLayout(false);
             this.pnlInformacionProdu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.pnlProducto.ResumeLayout(false);
             this.pnlProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

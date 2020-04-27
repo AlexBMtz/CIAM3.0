@@ -61,7 +61,7 @@ namespace CIAMTrial
                             dataContext.Set<DonationDetail>().Attach(donationDetail);
                         dataContext.Entry<DonationDetail>(donationDetail).State = EntityState.Deleted;
                         dataContext.SaveChanges();
-                        MetroFramework.MetroMessageBox.Show(this, "Entrada eliminado");
+                        MetroFramework.MetroMessageBox.Show(this, "Entrada eliminada");
                         donationDetailBindingSource.RemoveCurrent();
 
                         pnlDatos.Enabled = false;

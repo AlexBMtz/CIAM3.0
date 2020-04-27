@@ -29,21 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.admissionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donationTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donationDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlDatos = new MetroFramework.Controls.MetroPanel();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
+            this.lblId = new MetroFramework.Controls.MetroLabel();
+            this.txtId = new MetroFramework.Controls.MetroTextBox();
+            this.cmbCantidad = new MetroFramework.Controls.MetroComboBox();
+            this.CmbTipo = new MetroFramework.Controls.MetroComboBox();
             this.dtFecha = new MetroFramework.Controls.MetroDateTime();
             this.txtNombre = new MetroFramework.Controls.MetroTextBox();
             this.lblTipo = new MetroFramework.Controls.MetroLabel();
@@ -55,11 +49,17 @@
             this.btnEditar = new MetroFramework.Controls.MetroButton();
             this.btnCancelar = new MetroFramework.Controls.MetroButton();
             this.btnAgregar = new MetroFramework.Controls.MetroButton();
-            this.txtId = new MetroFramework.Controls.MetroTextBox();
-            this.lblId = new MetroFramework.Controls.MetroLabel();
+            this.donationDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.admissionDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donationTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.donationDetailBindingSource)).BeginInit();
             this.pnlDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.donationDetailBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // grdDatos
@@ -70,14 +70,14 @@
             this.grdDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.grdDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.grdDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.grdDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -88,85 +88,39 @@
             this.donationDataGridViewTextBoxColumn,
             this.productDataGridViewTextBoxColumn});
             this.grdDatos.DataSource = this.donationDetailBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdDatos.DefaultCellStyle = dataGridViewCellStyle2;
             this.grdDatos.EnableHeadersVisualStyles = false;
             this.grdDatos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdDatos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.grdDatos.Location = new System.Drawing.Point(23, 63);
             this.grdDatos.Name = "grdDatos";
             this.grdDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDatos.Size = new System.Drawing.Size(278, 305);
             this.grdDatos.TabIndex = 0;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // donorNameDataGridViewTextBoxColumn
-            // 
-            this.donorNameDataGridViewTextBoxColumn.DataPropertyName = "DonorName";
-            this.donorNameDataGridViewTextBoxColumn.HeaderText = "DonorName";
-            this.donorNameDataGridViewTextBoxColumn.Name = "donorNameDataGridViewTextBoxColumn";
-            // 
-            // admissionDateDataGridViewTextBoxColumn
-            // 
-            this.admissionDateDataGridViewTextBoxColumn.DataPropertyName = "AdmissionDate";
-            this.admissionDateDataGridViewTextBoxColumn.HeaderText = "AdmissionDate";
-            this.admissionDateDataGridViewTextBoxColumn.Name = "admissionDateDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // donationTypeDataGridViewTextBoxColumn
-            // 
-            this.donationTypeDataGridViewTextBoxColumn.DataPropertyName = "DonationType";
-            this.donationTypeDataGridViewTextBoxColumn.HeaderText = "DonationType";
-            this.donationTypeDataGridViewTextBoxColumn.Name = "donationTypeDataGridViewTextBoxColumn";
-            // 
-            // donationDataGridViewTextBoxColumn
-            // 
-            this.donationDataGridViewTextBoxColumn.DataPropertyName = "Donation";
-            this.donationDataGridViewTextBoxColumn.HeaderText = "Donation";
-            this.donationDataGridViewTextBoxColumn.Name = "donationDataGridViewTextBoxColumn";
-            // 
-            // productDataGridViewTextBoxColumn
-            // 
-            this.productDataGridViewTextBoxColumn.DataPropertyName = "Product";
-            this.productDataGridViewTextBoxColumn.HeaderText = "Product";
-            this.productDataGridViewTextBoxColumn.Name = "productDataGridViewTextBoxColumn";
-            // 
-            // donationDetailBindingSource
-            // 
-            this.donationDetailBindingSource.DataSource = typeof(CIAMTrial.Data.DonationDetail);
-            // 
             // pnlDatos
             // 
             this.pnlDatos.Controls.Add(this.lblId);
             this.pnlDatos.Controls.Add(this.txtId);
-            this.pnlDatos.Controls.Add(this.metroComboBox2);
-            this.pnlDatos.Controls.Add(this.metroComboBox1);
+            this.pnlDatos.Controls.Add(this.cmbCantidad);
+            this.pnlDatos.Controls.Add(this.CmbTipo);
             this.pnlDatos.Controls.Add(this.dtFecha);
             this.pnlDatos.Controls.Add(this.txtNombre);
             this.pnlDatos.Controls.Add(this.lblTipo);
@@ -184,12 +138,53 @@
             this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
             this.pnlDatos.VerticalScrollbarSize = 10;
             // 
-            // metroComboBox2
+            // lblId
             // 
-            this.metroComboBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "DonationType", true));
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Items.AddRange(new object[] {
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(3, 24);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(20, 19);
+            this.lblId.TabIndex = 11;
+            this.lblId.Text = "Id";
+            // 
+            // txtId
+            // 
+            // 
+            // 
+            // 
+            this.txtId.CustomButton.Image = null;
+            this.txtId.CustomButton.Location = new System.Drawing.Point(178, 1);
+            this.txtId.CustomButton.Name = "";
+            this.txtId.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtId.CustomButton.TabIndex = 1;
+            this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtId.CustomButton.UseSelectable = true;
+            this.txtId.CustomButton.Visible = false;
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "Id", true));
+            this.txtId.Enabled = false;
+            this.txtId.Lines = new string[0];
+            this.txtId.Location = new System.Drawing.Point(147, 20);
+            this.txtId.MaxLength = 32767;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(200, 23);
+            this.txtId.TabIndex = 10;
+            this.txtId.UseSelectable = true;
+            this.txtId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // cmbCantidad
+            // 
+            this.cmbCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "Quantity", true));
+            this.cmbCantidad.FormattingEnabled = true;
+            this.cmbCantidad.ItemHeight = 23;
+            this.cmbCantidad.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -200,18 +195,18 @@
             "8",
             "9",
             "10"});
-            this.metroComboBox2.Location = new System.Drawing.Point(147, 150);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox2.TabIndex = 9;
-            this.metroComboBox2.UseSelectable = true;
+            this.cmbCantidad.Location = new System.Drawing.Point(147, 115);
+            this.cmbCantidad.Name = "cmbCantidad";
+            this.cmbCantidad.Size = new System.Drawing.Size(121, 29);
+            this.cmbCantidad.TabIndex = 9;
+            this.cmbCantidad.UseSelectable = true;
             // 
-            // metroComboBox1
+            // CmbTipo
             // 
-            this.metroComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "DonationType", true));
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Items.AddRange(new object[] {
+            this.CmbTipo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "DonationType", true));
+            this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.ItemHeight = 23;
+            this.CmbTipo.Items.AddRange(new object[] {
             "Agua embotellada",
             "Arroz Bolsa",
             "Comida enlatada",
@@ -225,15 +220,16 @@
             "Sopa enlatada",
             "Ropa",
             "Toallas Sanitarias"});
-            this.metroComboBox1.Location = new System.Drawing.Point(147, 115);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox1.TabIndex = 8;
-            this.metroComboBox1.UseSelectable = true;
+            this.CmbTipo.Location = new System.Drawing.Point(147, 150);
+            this.CmbTipo.Name = "CmbTipo";
+            this.CmbTipo.Size = new System.Drawing.Size(121, 29);
+            this.CmbTipo.TabIndex = 8;
+            this.CmbTipo.UseSelectable = true;
             // 
             // dtFecha
             // 
             this.dtFecha.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "AdmissionDate", true));
+            this.dtFecha.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.donationDetailBindingSource, "AdmissionDate", true));
             this.dtFecha.Location = new System.Drawing.Point(147, 80);
             this.dtFecha.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtFecha.Name = "dtFecha";
@@ -357,46 +353,51 @@
             this.btnAgregar.UseSelectable = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtId
+            // donationDetailBindingSource
             // 
+            this.donationDetailBindingSource.DataSource = typeof(CIAMTrial.Data.DonationDetail);
             // 
+            // idDataGridViewTextBoxColumn
             // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
-            this.txtId.CustomButton.Image = null;
-            this.txtId.CustomButton.Location = new System.Drawing.Point(178, 1);
-            this.txtId.CustomButton.Name = "";
-            this.txtId.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtId.CustomButton.TabIndex = 1;
-            this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtId.CustomButton.UseSelectable = true;
-            this.txtId.CustomButton.Visible = false;
-            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.donationDetailBindingSource, "Id", true));
-            this.txtId.Enabled = false;
-            this.txtId.Lines = new string[0];
-            this.txtId.Location = new System.Drawing.Point(147, 20);
-            this.txtId.MaxLength = 32767;
-            this.txtId.Name = "txtId";
-            this.txtId.PasswordChar = '\0';
-            this.txtId.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtId.SelectedText = "";
-            this.txtId.SelectionLength = 0;
-            this.txtId.SelectionStart = 0;
-            this.txtId.ShortcutsEnabled = true;
-            this.txtId.Size = new System.Drawing.Size(200, 23);
-            this.txtId.TabIndex = 10;
-            this.txtId.UseSelectable = true;
-            this.txtId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // donorNameDataGridViewTextBoxColumn
             // 
-            // lblId
+            this.donorNameDataGridViewTextBoxColumn.DataPropertyName = "DonorName";
+            this.donorNameDataGridViewTextBoxColumn.HeaderText = "DonorName";
+            this.donorNameDataGridViewTextBoxColumn.Name = "donorNameDataGridViewTextBoxColumn";
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(3, 24);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(20, 19);
-            this.lblId.TabIndex = 11;
-            this.lblId.Text = "Id";
+            // admissionDateDataGridViewTextBoxColumn
+            // 
+            this.admissionDateDataGridViewTextBoxColumn.DataPropertyName = "AdmissionDate";
+            this.admissionDateDataGridViewTextBoxColumn.HeaderText = "AdmissionDate";
+            this.admissionDateDataGridViewTextBoxColumn.Name = "admissionDateDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            // 
+            // donationTypeDataGridViewTextBoxColumn
+            // 
+            this.donationTypeDataGridViewTextBoxColumn.DataPropertyName = "DonationType";
+            this.donationTypeDataGridViewTextBoxColumn.HeaderText = "DonationType";
+            this.donationTypeDataGridViewTextBoxColumn.Name = "donationTypeDataGridViewTextBoxColumn";
+            // 
+            // donationDataGridViewTextBoxColumn
+            // 
+            this.donationDataGridViewTextBoxColumn.DataPropertyName = "Donation";
+            this.donationDataGridViewTextBoxColumn.HeaderText = "Donation";
+            this.donationDataGridViewTextBoxColumn.Name = "donationDataGridViewTextBoxColumn";
+            // 
+            // productDataGridViewTextBoxColumn
+            // 
+            this.productDataGridViewTextBoxColumn.DataPropertyName = "Product";
+            this.productDataGridViewTextBoxColumn.HeaderText = "Product";
+            this.productDataGridViewTextBoxColumn.Name = "productDataGridViewTextBoxColumn";
             // 
             // frmEntrada
             // 
@@ -414,9 +415,9 @@
             this.Text = "Entrada";
             this.Load += new System.EventHandler(this.frmEntrada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.donationDetailBindingSource)).EndInit();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.donationDetailBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,8 +440,8 @@
         private System.Windows.Forms.BindingSource donationDetailBindingSource;
         private MetroFramework.Controls.MetroDateTime dtFecha;
         private MetroFramework.Controls.MetroTextBox txtNombre;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroComboBox cmbCantidad;
+        private MetroFramework.Controls.MetroComboBox CmbTipo;
         private MetroFramework.Controls.MetroButton btnSave;
         private MetroFramework.Controls.MetroButton btnEliminar;
         private MetroFramework.Controls.MetroButton btnEditar;
