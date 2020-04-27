@@ -29,6 +29,7 @@ namespace CIAMTrial
             pnlDatosPersonales.Enabled = false;
             pnlArea.Enabled = false;
             pnlContacto.Enabled = false;
+            pctbEmpleado.Enabled = false;
             Employee employee = employeeBindingSource.Current as Employee;
             if (employee != null && employee.ImageUrl != null)
                 pctbEmpleado.Image = Image.FromFile(employee.ImageUrl);
@@ -46,6 +47,7 @@ namespace CIAMTrial
             pnlDatosPersonales.Enabled = true;
             pnlContacto.Enabled = true;
             pnlArea.Enabled = true;
+            pctbEmpleado.Enabled = true;
             pctbEmpleado.Image = null;
             employeeBindingSource.Add(new Employee());
             employeeBindingSource.MoveLast();
@@ -57,6 +59,7 @@ namespace CIAMTrial
             pnlDatosPersonales.Enabled = true;
             pnlContacto.Enabled = true;
             pnlArea.Enabled = true;
+            pctbEmpleado.Enabled = true;
             txtNombre.Focus();
             Employee employee =
                 employeeBindingSource.Current as Employee;
@@ -86,6 +89,8 @@ namespace CIAMTrial
                         pnlDatosPersonales.Enabled = false;
                         pnlContacto.Enabled = false;
                         pnlArea.Enabled = false;
+                        pctbEmpleado.Enabled = false;
+
                     }
                 }
             }
@@ -111,6 +116,7 @@ namespace CIAMTrial
                     pnlDatosPersonales.Enabled = false;
                     pnlContacto.Enabled = false;
                     pnlArea.Enabled = false;
+                    pctbEmpleado.Enabled = false;
                 }
             }
         }
@@ -120,6 +126,7 @@ namespace CIAMTrial
             pnlDatosPersonales.Enabled = false;
             pnlContacto.Enabled = false;
             pnlArea.Enabled = false;
+            pctbEmpleado.Enabled=false;
             employeeBindingSource.ResetBindings(false);
             frmEmpleado_Load(sender, e);
         }
@@ -136,10 +143,9 @@ namespace CIAMTrial
 
         private void pctbEmpleado_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofd =
-                new OpenFileDialog()
+            using (OpenFileDialog ofd = new OpenFileDialog()
                 {
-                    Filter = "|Archivos JPEG|*.jpg|Archivos PNG|*.png|Todos los archivos|*.*"
+                    Filter = "Archivos JPEG|*.jpg|Archivos PNG|*.png|Todos los archivos|*.*"
                 })
             {
                 if (ofd.ShowDialog() == DialogResult.OK)

@@ -16,7 +16,7 @@ namespace CIAMTrial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEntrada());
+            Application.Run(new frmEmpleado());
         }
     }
 }
