@@ -33,19 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlInformacionProdu = new MetroFramework.Controls.MetroPanel();
-            this.txtCantidad = new MetroFramework.Controls.MetroTextBox();
             this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtTipoProducto = new MetroFramework.Controls.MetroTextBox();
-            this.txtCalidad = new MetroFramework.Controls.MetroTextBox();
             this.lblCalidad = new MetroFramework.Controls.MetroLabel();
             this.lblCantidad = new MetroFramework.Controls.MetroLabel();
-            this.lblTipoProducto = new MetroFramework.Controls.MetroLabel();
             this.pnlProducto = new MetroFramework.Controls.MetroPanel();
             this.txtId = new MetroFramework.Controls.MetroTextBox();
             this.lblId = new MetroFramework.Controls.MetroLabel();
-            this.txtDescripcion = new MetroFramework.Controls.MetroTextBox();
             this.lblDescripcion = new MetroFramework.Controls.MetroLabel();
-            this.txtProducto = new MetroFramework.Controls.MetroTextBox();
             this.lblProducto = new MetroFramework.Controls.MetroLabel();
             this.bttGuardar = new MetroFramework.Controls.MetroButton();
             this.bttAñadir = new MetroFramework.Controls.MetroButton();
@@ -61,6 +55,10 @@
             this.productQualityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.donationDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.requestDetailsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtDescripcion = new MetroFramework.Controls.MetroTextBox();
+            this.CmbTipo = new MetroFramework.Controls.MetroComboBox();
+            this.cmbCantidad = new MetroFramework.Controls.MetroComboBox();
+            this.cmbCalidad = new MetroFramework.Controls.MetroComboBox();
             this.pnlInformacionProdu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             this.pnlProducto.SuspendLayout();
@@ -69,124 +67,29 @@
             // 
             // pnlInformacionProdu
             // 
-            this.pnlInformacionProdu.Controls.Add(this.txtCantidad);
-            this.pnlInformacionProdu.Controls.Add(this.txtTipoProducto);
-            this.pnlInformacionProdu.Controls.Add(this.txtCalidad);
+            this.pnlInformacionProdu.Controls.Add(this.cmbCalidad);
+            this.pnlInformacionProdu.Controls.Add(this.cmbCantidad);
             this.pnlInformacionProdu.Controls.Add(this.lblCalidad);
             this.pnlInformacionProdu.Controls.Add(this.lblCantidad);
-            this.pnlInformacionProdu.Controls.Add(this.lblTipoProducto);
             this.pnlInformacionProdu.HorizontalScrollbarBarColor = true;
             this.pnlInformacionProdu.HorizontalScrollbarHighlightOnWheel = false;
             this.pnlInformacionProdu.HorizontalScrollbarSize = 10;
-            this.pnlInformacionProdu.Location = new System.Drawing.Point(345, 203);
+            this.pnlInformacionProdu.Location = new System.Drawing.Point(359, 223);
             this.pnlInformacionProdu.Name = "pnlInformacionProdu";
-            this.pnlInformacionProdu.Size = new System.Drawing.Size(293, 152);
+            this.pnlInformacionProdu.Size = new System.Drawing.Size(264, 129);
             this.pnlInformacionProdu.TabIndex = 4;
             this.pnlInformacionProdu.VerticalScrollbarBarColor = true;
             this.pnlInformacionProdu.VerticalScrollbarHighlightOnWheel = false;
             this.pnlInformacionProdu.VerticalScrollbarSize = 10;
             // 
-            // txtCantidad
-            // 
-            // 
-            // 
-            // 
-            this.txtCantidad.CustomButton.Image = null;
-            this.txtCantidad.CustomButton.Location = new System.Drawing.Point(126, 1);
-            this.txtCantidad.CustomButton.Name = "";
-            this.txtCantidad.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtCantidad.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCantidad.CustomButton.TabIndex = 1;
-            this.txtCantidad.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCantidad.CustomButton.UseSelectable = true;
-            this.txtCantidad.CustomButton.Visible = false;
-            this.txtCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "AvaliableQuantity", true));
-            this.txtCantidad.Lines = new string[0];
-            this.txtCantidad.Location = new System.Drawing.Point(130, 112);
-            this.txtCantidad.MaxLength = 32767;
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.PasswordChar = '\0';
-            this.txtCantidad.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCantidad.SelectedText = "";
-            this.txtCantidad.SelectionLength = 0;
-            this.txtCantidad.SelectionStart = 0;
-            this.txtCantidad.ShortcutsEnabled = true;
-            this.txtCantidad.Size = new System.Drawing.Size(148, 23);
-            this.txtCantidad.TabIndex = 6;
-            this.txtCantidad.UseSelectable = true;
-            this.txtCantidad.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCantidad.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // productBindingSource
             // 
             this.productBindingSource.DataSource = typeof(CIAMTrial.Data.Product);
             // 
-            // txtTipoProducto
-            // 
-            // 
-            // 
-            // 
-            this.txtTipoProducto.CustomButton.Image = null;
-            this.txtTipoProducto.CustomButton.Location = new System.Drawing.Point(126, 1);
-            this.txtTipoProducto.CustomButton.Name = "";
-            this.txtTipoProducto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtTipoProducto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtTipoProducto.CustomButton.TabIndex = 1;
-            this.txtTipoProducto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtTipoProducto.CustomButton.UseSelectable = true;
-            this.txtTipoProducto.CustomButton.Visible = false;
-            this.txtTipoProducto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProductTye", true));
-            this.txtTipoProducto.Lines = new string[0];
-            this.txtTipoProducto.Location = new System.Drawing.Point(130, 14);
-            this.txtTipoProducto.MaxLength = 32767;
-            this.txtTipoProducto.Name = "txtTipoProducto";
-            this.txtTipoProducto.PasswordChar = '\0';
-            this.txtTipoProducto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtTipoProducto.SelectedText = "";
-            this.txtTipoProducto.SelectionLength = 0;
-            this.txtTipoProducto.SelectionStart = 0;
-            this.txtTipoProducto.ShortcutsEnabled = true;
-            this.txtTipoProducto.Size = new System.Drawing.Size(148, 23);
-            this.txtTipoProducto.TabIndex = 5;
-            this.txtTipoProducto.UseSelectable = true;
-            this.txtTipoProducto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtTipoProducto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtCalidad
-            // 
-            // 
-            // 
-            // 
-            this.txtCalidad.CustomButton.Image = null;
-            this.txtCalidad.CustomButton.Location = new System.Drawing.Point(126, 1);
-            this.txtCalidad.CustomButton.Name = "";
-            this.txtCalidad.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtCalidad.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCalidad.CustomButton.TabIndex = 1;
-            this.txtCalidad.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCalidad.CustomButton.UseSelectable = true;
-            this.txtCalidad.CustomButton.Visible = false;
-            this.txtCalidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProductQuality", true));
-            this.txtCalidad.Lines = new string[0];
-            this.txtCalidad.Location = new System.Drawing.Point(130, 62);
-            this.txtCalidad.MaxLength = 32767;
-            this.txtCalidad.Name = "txtCalidad";
-            this.txtCalidad.PasswordChar = '\0';
-            this.txtCalidad.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCalidad.SelectedText = "";
-            this.txtCalidad.SelectionLength = 0;
-            this.txtCalidad.SelectionStart = 0;
-            this.txtCalidad.ShortcutsEnabled = true;
-            this.txtCalidad.Size = new System.Drawing.Size(148, 23);
-            this.txtCalidad.TabIndex = 4;
-            this.txtCalidad.UseSelectable = true;
-            this.txtCalidad.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCalidad.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // lblCalidad
             // 
             this.lblCalidad.AutoSize = true;
-            this.lblCalidad.Location = new System.Drawing.Point(9, 62);
+            this.lblCalidad.Location = new System.Drawing.Point(19, 34);
             this.lblCalidad.Name = "lblCalidad";
             this.lblCalidad.Size = new System.Drawing.Size(54, 19);
             this.lblCalidad.TabIndex = 3;
@@ -195,35 +98,26 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(11, 116);
+            this.lblCantidad.Location = new System.Drawing.Point(19, 71);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(62, 19);
             this.lblCantidad.TabIndex = 2;
             this.lblCantidad.Text = "Cantidad";
             // 
-            // lblTipoProducto
-            // 
-            this.lblTipoProducto.AutoSize = true;
-            this.lblTipoProducto.Location = new System.Drawing.Point(9, 14);
-            this.lblTipoProducto.Name = "lblTipoProducto";
-            this.lblTipoProducto.Size = new System.Drawing.Size(115, 19);
-            this.lblTipoProducto.TabIndex = 1;
-            this.lblTipoProducto.Text = "Tipo del Producto";
-            // 
             // pnlProducto
             // 
+            this.pnlProducto.Controls.Add(this.CmbTipo);
             this.pnlProducto.Controls.Add(this.txtId);
             this.pnlProducto.Controls.Add(this.lblId);
             this.pnlProducto.Controls.Add(this.txtDescripcion);
             this.pnlProducto.Controls.Add(this.lblDescripcion);
-            this.pnlProducto.Controls.Add(this.txtProducto);
             this.pnlProducto.Controls.Add(this.lblProducto);
             this.pnlProducto.HorizontalScrollbarBarColor = true;
             this.pnlProducto.HorizontalScrollbarHighlightOnWheel = false;
             this.pnlProducto.HorizontalScrollbarSize = 10;
-            this.pnlProducto.Location = new System.Drawing.Point(342, 17);
+            this.pnlProducto.Location = new System.Drawing.Point(342, 26);
             this.pnlProducto.Name = "pnlProducto";
-            this.pnlProducto.Size = new System.Drawing.Size(293, 180);
+            this.pnlProducto.Size = new System.Drawing.Size(296, 191);
             this.pnlProducto.TabIndex = 3;
             this.pnlProducto.VerticalScrollbarBarColor = true;
             this.pnlProducto.VerticalScrollbarHighlightOnWheel = false;
@@ -244,8 +138,9 @@
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
             this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Id", true));
+            this.txtId.Enabled = false;
             this.txtId.Lines = new string[0];
-            this.txtId.Location = new System.Drawing.Point(195, 58);
+            this.txtId.Location = new System.Drawing.Point(81, 7);
             this.txtId.MaxLength = 32767;
             this.txtId.Name = "txtId";
             this.txtId.PasswordChar = '\0';
@@ -263,87 +158,25 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(168, 62);
+            this.lblId.Location = new System.Drawing.Point(14, 11);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(21, 19);
             this.lblId.TabIndex = 7;
             this.lblId.Text = "ID";
             // 
-            // txtDescripcion
-            // 
-            // 
-            // 
-            // 
-            this.txtDescripcion.CustomButton.Image = null;
-            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(191, 2);
-            this.txtDescripcion.CustomButton.Name = "";
-            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(75, 75);
-            this.txtDescripcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDescripcion.CustomButton.TabIndex = 1;
-            this.txtDescripcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDescripcion.CustomButton.UseSelectable = true;
-            this.txtDescripcion.CustomButton.Visible = false;
-            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Description", true));
-            this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(12, 87);
-            this.txtDescripcion.MaxLength = 32767;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PasswordChar = '\0';
-            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.SelectionLength = 0;
-            this.txtDescripcion.SelectionStart = 0;
-            this.txtDescripcion.ShortcutsEnabled = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(269, 80);
-            this.txtDescripcion.TabIndex = 5;
-            this.txtDescripcion.UseSelectable = true;
-            this.txtDescripcion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDescripcion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(3, 58);
+            this.lblDescripcion.Location = new System.Drawing.Point(12, 84);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(76, 19);
             this.lblDescripcion.TabIndex = 4;
             this.lblDescripcion.Text = "Descripción";
             // 
-            // txtProducto
-            // 
-            // 
-            // 
-            // 
-            this.txtProducto.CustomButton.Image = null;
-            this.txtProducto.CustomButton.Location = new System.Drawing.Point(164, 1);
-            this.txtProducto.CustomButton.Name = "";
-            this.txtProducto.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtProducto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtProducto.CustomButton.TabIndex = 1;
-            this.txtProducto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtProducto.CustomButton.UseSelectable = true;
-            this.txtProducto.CustomButton.Visible = false;
-            this.txtProducto.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProductName", true));
-            this.txtProducto.Lines = new string[0];
-            this.txtProducto.Location = new System.Drawing.Point(12, 32);
-            this.txtProducto.MaxLength = 32767;
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.PasswordChar = '\0';
-            this.txtProducto.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtProducto.SelectedText = "";
-            this.txtProducto.SelectionLength = 0;
-            this.txtProducto.SelectionStart = 0;
-            this.txtProducto.ShortcutsEnabled = true;
-            this.txtProducto.Size = new System.Drawing.Size(186, 23);
-            this.txtProducto.TabIndex = 3;
-            this.txtProducto.UseSelectable = true;
-            this.txtProducto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtProducto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
             // lblProducto
             // 
             this.lblProducto.AutoSize = true;
-            this.lblProducto.Location = new System.Drawing.Point(3, 10);
+            this.lblProducto.Location = new System.Drawing.Point(12, 49);
             this.lblProducto.Name = "lblProducto";
             this.lblProducto.Size = new System.Drawing.Size(63, 19);
             this.lblProducto.TabIndex = 2;
@@ -351,7 +184,7 @@
             // 
             // bttGuardar
             // 
-            this.bttGuardar.Location = new System.Drawing.Point(356, 399);
+            this.bttGuardar.Location = new System.Drawing.Point(423, 370);
             this.bttGuardar.Name = "bttGuardar";
             this.bttGuardar.Size = new System.Drawing.Size(75, 23);
             this.bttGuardar.TabIndex = 13;
@@ -361,7 +194,7 @@
             // 
             // bttAñadir
             // 
-            this.bttAñadir.Location = new System.Drawing.Point(356, 370);
+            this.bttAñadir.Location = new System.Drawing.Point(261, 370);
             this.bttAñadir.Name = "bttAñadir";
             this.bttAñadir.Size = new System.Drawing.Size(75, 23);
             this.bttAñadir.TabIndex = 14;
@@ -371,7 +204,7 @@
             // 
             // bttCancelar
             // 
-            this.bttCancelar.Location = new System.Drawing.Point(534, 399);
+            this.bttCancelar.Location = new System.Drawing.Point(585, 370);
             this.bttCancelar.Name = "bttCancelar";
             this.bttCancelar.Size = new System.Drawing.Size(75, 23);
             this.bttCancelar.TabIndex = 12;
@@ -381,7 +214,7 @@
             // 
             // bttEditar
             // 
-            this.bttEditar.Location = new System.Drawing.Point(446, 370);
+            this.bttEditar.Location = new System.Drawing.Point(342, 370);
             this.bttEditar.Name = "bttEditar";
             this.bttEditar.Size = new System.Drawing.Size(75, 23);
             this.bttEditar.TabIndex = 15;
@@ -391,7 +224,7 @@
             // 
             // bttEliminar
             // 
-            this.bttEliminar.Location = new System.Drawing.Point(534, 370);
+            this.bttEliminar.Location = new System.Drawing.Point(504, 370);
             this.bttEliminar.Name = "bttEliminar";
             this.bttEliminar.Size = new System.Drawing.Size(75, 23);
             this.bttEliminar.TabIndex = 16;
@@ -501,6 +334,99 @@
             this.requestDetailsDataGridViewTextBoxColumn.HeaderText = "RequestDetails";
             this.requestDetailsDataGridViewTextBoxColumn.Name = "requestDetailsDataGridViewTextBoxColumn";
             // 
+            // txtDescripcion
+            // 
+            // 
+            // 
+            // 
+            this.txtDescripcion.CustomButton.Image = null;
+            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(191, 2);
+            this.txtDescripcion.CustomButton.Name = "";
+            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(75, 75);
+            this.txtDescripcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDescripcion.CustomButton.TabIndex = 1;
+            this.txtDescripcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDescripcion.CustomButton.UseSelectable = true;
+            this.txtDescripcion.CustomButton.Visible = false;
+            this.txtDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "Description", true));
+            this.txtDescripcion.Lines = new string[0];
+            this.txtDescripcion.Location = new System.Drawing.Point(14, 105);
+            this.txtDescripcion.MaxLength = 32767;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.PasswordChar = '\0';
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescripcion.SelectedText = "";
+            this.txtDescripcion.SelectionLength = 0;
+            this.txtDescripcion.SelectionStart = 0;
+            this.txtDescripcion.ShortcutsEnabled = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(269, 80);
+            this.txtDescripcion.TabIndex = 5;
+            this.txtDescripcion.UseSelectable = true;
+            this.txtDescripcion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDescripcion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // CmbTipo
+            // 
+            this.CmbTipo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProductName", true));
+            this.CmbTipo.FormattingEnabled = true;
+            this.CmbTipo.ItemHeight = 23;
+            this.CmbTipo.Items.AddRange(new object[] {
+            "Agua embotellada",
+            "Arroz Bolsa",
+            "Comida enlatada",
+            "Comida para bebés",
+            "Desechables",
+            "Frijol Bolsa",
+            "Jabón",
+            "Medicamentos",
+            "Pañales",
+            "Papel Higiénico",
+            "Sopa enlatada",
+            "Ropa",
+            "Toallas Sanitarias"});
+            this.CmbTipo.Location = new System.Drawing.Point(81, 46);
+            this.CmbTipo.Name = "CmbTipo";
+            this.CmbTipo.Size = new System.Drawing.Size(121, 29);
+            this.CmbTipo.TabIndex = 9;
+            this.CmbTipo.UseSelectable = true;
+            // 
+            // cmbCantidad
+            // 
+            this.cmbCantidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "AvaliableQuantity", true));
+            this.cmbCantidad.FormattingEnabled = true;
+            this.cmbCantidad.ItemHeight = 23;
+            this.cmbCantidad.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cmbCantidad.Location = new System.Drawing.Point(100, 61);
+            this.cmbCantidad.Name = "cmbCantidad";
+            this.cmbCantidad.Size = new System.Drawing.Size(121, 29);
+            this.cmbCantidad.TabIndex = 10;
+            this.cmbCantidad.UseSelectable = true;
+            // 
+            // cmbCalidad
+            // 
+            this.cmbCalidad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productBindingSource, "ProductQuality", true));
+            this.cmbCalidad.FormattingEnabled = true;
+            this.cmbCalidad.ItemHeight = 23;
+            this.cmbCalidad.Items.AddRange(new object[] {
+            "En Buen Estado",
+            "En Mal Estado",
+            "Caducado"});
+            this.cmbCalidad.Location = new System.Drawing.Point(100, 26);
+            this.cmbCalidad.Name = "cmbCalidad";
+            this.cmbCalidad.Size = new System.Drawing.Size(121, 29);
+            this.cmbCalidad.TabIndex = 11;
+            this.cmbCalidad.UseSelectable = true;
+            // 
             // frmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -530,18 +456,12 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel pnlInformacionProdu;
-        private MetroFramework.Controls.MetroTextBox txtCantidad;
-        private MetroFramework.Controls.MetroTextBox txtTipoProducto;
-        private MetroFramework.Controls.MetroTextBox txtCalidad;
         private MetroFramework.Controls.MetroLabel lblCalidad;
         private MetroFramework.Controls.MetroLabel lblCantidad;
-        private MetroFramework.Controls.MetroLabel lblTipoProducto;
         private MetroFramework.Controls.MetroPanel pnlProducto;
         private MetroFramework.Controls.MetroTextBox txtId;
         private MetroFramework.Controls.MetroLabel lblId;
-        private MetroFramework.Controls.MetroTextBox txtDescripcion;
         private MetroFramework.Controls.MetroLabel lblDescripcion;
-        private MetroFramework.Controls.MetroTextBox txtProducto;
         private MetroFramework.Controls.MetroLabel lblProducto;
         private MetroFramework.Controls.MetroButton bttGuardar;
         private MetroFramework.Controls.MetroButton bttAñadir;
@@ -558,5 +478,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn donationDetailsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn requestDetailsDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource productBindingSource;
+        private MetroFramework.Controls.MetroTextBox txtDescripcion;
+        private MetroFramework.Controls.MetroComboBox CmbTipo;
+        private MetroFramework.Controls.MetroComboBox cmbCalidad;
+        private MetroFramework.Controls.MetroComboBox cmbCantidad;
     }
 }

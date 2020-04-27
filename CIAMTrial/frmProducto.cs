@@ -34,7 +34,7 @@ namespace CIAMTrial
         {
             pnlInformacionProdu.Enabled = true;
             pnlProducto.Enabled = true;
-            txtProducto.Focus();
+            txtDescripcion.Focus();
             productBindingSource.Add(new Product());
             productBindingSource.MoveLast();
             Product product = productBindingSource.Current as Product;
@@ -75,7 +75,7 @@ namespace CIAMTrial
         {
             pnlInformacionProdu.Enabled = true;
             pnlProducto.Enabled = true;
-            txtProducto.Focus();
+            txtDescripcion.Focus();
             Product product = productBindingSource.Current as Product;
         }
 
@@ -103,8 +103,13 @@ namespace CIAMTrial
                         pnlInformacionProdu.Enabled = false;
                         pnlProducto.Enabled = false;
                     }
+
                 }
             }
+        }
+        private void grdProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Product product = productBindingSource.Current as Product;
         }
     }
 }

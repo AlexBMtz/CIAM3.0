@@ -49,7 +49,7 @@ namespace CIAMTrial
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             if (MetroFramework.MetroMessageBox.Show(this,
-                "¿Quieres eliminar esta donación?",
+                "¿Quieres eliminar a este donador?",
                 "Eliminar",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
@@ -64,7 +64,7 @@ namespace CIAMTrial
                             dataContext.Set<Donor>().Attach(donor);
                         dataContext.Entry<Donor>(donor).State = EntityState.Deleted;
                         dataContext.SaveChanges();
-                        MetroFramework.MetroMessageBox.Show(this, "Donación eliminado");
+                        MetroFramework.MetroMessageBox.Show(this, "Donador eliminado");
                         donorBindingSource.RemoveCurrent();
 
                         pnlDatos.Enabled = false;
@@ -90,7 +90,7 @@ namespace CIAMTrial
                     else
                         dataContext.Entry<Donor>(donor).State = EntityState.Modified;
                     dataContext.SaveChanges();
-                    MetroFramework.MetroMessageBox.Show(this, "Donante guardado");
+                    MetroFramework.MetroMessageBox.Show(this, "Donador guardado");
                     grdDatos.Refresh();
                     pnlDatos.Enabled = false;
                     pnlContacto.Enabled = false;
@@ -106,6 +106,12 @@ namespace CIAMTrial
             pnlDonacion.Enabled = false;
             donorBindingSource.ResetBindings(false);
             Donante_Load(sender, e);
+        }
+        private void grdDatos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Donor donor = donorBindingSource.Current as Donor;
+            
+
         }
     }
 }

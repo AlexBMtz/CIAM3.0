@@ -1,16 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace CIAMTrial
 {
-    public partial class frmInicio : MetroFramework.Forms.MetroForm 
+    public partial class frmInicio : MetroFramework.Forms.MetroForm
     {
         public frmInicio()
         {
@@ -22,11 +14,47 @@ namespace CIAMTrial
             
             frmCentro administrador = new frmCentro();
             administrador.ShowDialog();
-
             
 
+        }
 
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            
+            frmEmpleado administrador = new frmEmpleado();
+            administrador.ShowDialog();
+            
+        }
 
+        private void btnDonadores_Click(object sender, EventArgs e)
+        {
+            
+            frmDonante administrador = new frmDonante();
+            administrador.ShowDialog();
+            
+        }
+
+        private void btnEnvios_Click(object sender, EventArgs e)
+        {
+            
+            frmEnvio administrador = new frmEnvio();
+            administrador.ShowDialog();
+        }
+
+        private void btnEntradas_Click(object sender, EventArgs e)
+        {
+          
+            frmEnvio administrador = new frmEnvio();
+            administrador.ShowDialog();
+            
+        }
+
+        private void btnDonaciones_Click(object sender, EventArgs e)
+        {
+            
+            frmProducto administrador = new frmProducto();
+            administrador.ShowDialog();
+            
         }
     }
 }
